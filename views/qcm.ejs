@@ -1,0 +1,22 @@
+<%- include('header') -%>
+<% if (qcm !=null) { %>
+<div>
+    <%= qcm.name %>
+</div>
+
+<div>
+    <%= qcm.subject %>
+</div>
+
+<div>
+    <%= qcm.nbpoints %>
+</div>
+
+<div>
+    <%= qcm.author %>
+</div>
+<% } %> 
+<% if (qcm ==null){ %>
+    <h4>Il n'existe pas de Qcm pour cet id</h4>
+<% } %> 
+<%- include('footer') -%>
